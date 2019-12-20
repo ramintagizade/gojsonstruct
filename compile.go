@@ -130,21 +130,3 @@ func isInt(v string) bool {
 	}
 	return false
 }
-
-func getStructName(s string) string {
-	n := len(s)
-	var words []string
-	isWord := ""
-	for i := 0; i < n; i++ {
-		if s[i] == ' ' {
-			if len(isWord) > 0 {
-				words = append(words, isWord)
-			}
-			isWord = ""
-		} else {
-			isWord += string(s[i])
-		}
-	}
-	fmt.Println("Words ", words)
-	return "ok"
-}
