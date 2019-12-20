@@ -23,4 +23,23 @@ Converts json documents into struct
         }
      }
 
+## Result 
 
+         type T struct {
+	        Person struct {
+		        Name string `json:"name"`
+		        Age int `json:"age"`
+		        Cars struct {
+			       Car1 string `json:"car1"`
+			       Car2 string `json:"car2"`
+		        } `json:"cars"`
+		        FavouriteLanguages []string `json:"favouriteLanguages"`
+	        } `json:"person"`
+	        Computer struct {
+		        Name string `json:"name"`
+		        Year int `json:"year"`
+		        New bool `json:"new"`
+		        Version float64 `json:"version"`
+	        } `json:"computer"`
+         }
+  
