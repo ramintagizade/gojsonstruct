@@ -1,8 +1,7 @@
-package main
+package gojsonstruct
 
 import (
 	"fmt"
-	"io/ioutil"
 	"strconv"
 	"strings"
 
@@ -148,10 +147,4 @@ func getStructName(s string) string {
 	}
 	fmt.Println("Words ", words)
 	return "ok"
-}
-
-func main() {
-	f, _ := ioutil.ReadFile("out.json")
-	Compile(string(f))
-
 }
