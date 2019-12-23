@@ -43,3 +43,10 @@ Converts json documents into struct
 	        } `json:"computer"`
          }
   
+## Install 
+
+<code>go get -v github.com/ramintagizade/gojsonstruct/cmd/gojsonstruct </code>
+
+## Run 
+
+<code> gojsonstruct file.json </code>
